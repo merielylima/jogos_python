@@ -58,7 +58,7 @@ def entrar_chute():
     chute = chute.strip().upper()  # ignorar os espaços
     return chute
 
-def chute_certo():
+def chute_certo(chute, letras_acertadas, palavra_secreta):
     index = 0
     for letra in palavra_secreta:
         if (chute == letra):
